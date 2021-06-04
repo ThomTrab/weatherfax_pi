@@ -1078,15 +1078,23 @@ WeatherFaxWizardBase::WeatherFaxWizardBase( wxWindow* parent, wxWindowID id, con
 	m_fgSizerLatLonUnMapped->Add( m_staticText6, 0, wxALL|wxALIGN_BOTTOM, 5 );
 
 	m_sCoord1YUnMapped = new wxSpinCtrl( m_panel10, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,-1 ), wxSP_ARROW_KEYS, 0, 10, 0 );
+	m_sCoord1YUnMapped->SetMaxSize( wxSize( 140,-1 ) );
+
 	m_fgSizerLatLonUnMapped->Add( m_sCoord1YUnMapped, 1, wxALL|wxEXPAND, 5 );
 
 	m_sCoord1LatUnMapped = new wxSpinCtrl( m_panel10, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,-1 ), wxSP_ARROW_KEYS, -90, 180, 0 );
+	m_sCoord1LatUnMapped->SetMaxSize( wxSize( 140,-1 ) );
+
 	m_fgSizerLatLonUnMapped->Add( m_sCoord1LatUnMapped, 1, wxALL|wxEXPAND, 5 );
 
 	m_sCoord1XUnMapped = new wxSpinCtrl( m_panel10, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,-1 ), wxSP_ARROW_KEYS, 0, 10, 0 );
+	m_sCoord1XUnMapped->SetMaxSize( wxSize( 140,-1 ) );
+
 	m_fgSizerLatLonUnMapped->Add( m_sCoord1XUnMapped, 1, wxALL|wxEXPAND, 5 );
 
 	m_sCoord1LonUnMapped = new wxSpinCtrl( m_panel10, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,-1 ), wxSP_ARROW_KEYS, -180, 180, 0 );
+	m_sCoord1LonUnMapped->SetMaxSize( wxSize( 140,-1 ) );
+
 	m_fgSizerLatLonUnMapped->Add( m_sCoord1LonUnMapped, 1, wxALL|wxEXPAND, 5 );
 
 	m_rbCoord2UnMapped = new wxRadioButton( m_panel10, wxID_ANY, _("Coord Y/X"), wxDefaultPosition, wxDefaultSize, 0 );
@@ -1101,15 +1109,23 @@ WeatherFaxWizardBase::WeatherFaxWizardBase( wxWindow* parent, wxWindowID id, con
 	m_fgSizerLatLonUnMapped->Add( m_staticText8, 0, wxALL|wxALIGN_BOTTOM, 5 );
 
 	m_sCoord2YUnMapped = new wxSpinCtrl( m_panel10, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,-1 ), wxSP_ARROW_KEYS, 0, 10, 0 );
+	m_sCoord2YUnMapped->SetMaxSize( wxSize( 140,-1 ) );
+
 	m_fgSizerLatLonUnMapped->Add( m_sCoord2YUnMapped, 1, wxALL|wxEXPAND, 5 );
 
 	m_sCoord2LatUnMapped = new wxSpinCtrl( m_panel10, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,-1 ), wxSP_ARROW_KEYS, -90, 90, 0 );
+	m_sCoord2LatUnMapped->SetMaxSize( wxSize( 140,-1 ) );
+
 	m_fgSizerLatLonUnMapped->Add( m_sCoord2LatUnMapped, 1, wxALL|wxEXPAND, 5 );
 
 	m_sCoord2XUnMapped = new wxSpinCtrl( m_panel10, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,-1 ), wxSP_ARROW_KEYS, 0, 10, 0 );
+	m_sCoord2XUnMapped->SetMaxSize( wxSize( 140,-1 ) );
+
 	m_fgSizerLatLonUnMapped->Add( m_sCoord2XUnMapped, 1, wxALL|wxEXPAND, 5 );
 
 	m_sCoord2LonUnMapped = new wxSpinCtrl( m_panel10, wxID_ANY, wxEmptyString, wxDefaultPosition, wxSize( -1,-1 ), wxSP_ARROW_KEYS, -180, 180, 0 );
+	m_sCoord2LonUnMapped->SetMaxSize( wxSize( 140,-1 ) );
+
 	m_fgSizerLatLonUnMapped->Add( m_sCoord2LonUnMapped, 1, wxALL|wxALIGN_CENTER_HORIZONTAL|wxEXPAND, 5 );
 
 
